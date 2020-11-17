@@ -10,14 +10,14 @@ Este schema plugin foi desenvolvido para o GeoNetwork 3.4+, não se recomenda a 
 
 ### Adicionar o schema plugin ao código fonte
 
-A versão adaptada do GeoNetwork para o SNIG (https://github.com/ricardogsena/core-geonetwork.git) adiciona automaticamente este schema plugin como um submódulo do projeto, pelo que apenas é necessário seguir as instruções de instalação dessa versão. No entanto, este schema plugin pode também ser utilizado na versão base GeoNetwork 3.4+, descrevendo-se em seguinte as passos a realizar para fazer a sua integração nessa versão: 
+A versão adaptada do GeoNetwork para o SNIG (https://github.com/wktsi/core-geonetwork) adiciona automaticamente este schema plugin como um submódulo do projeto, pelo que apenas é necessário seguir as instruções de instalação dessa versão. No entanto, este schema plugin pode também ser utilizado na versão base GeoNetwork 3.4+, descrevendo-se em seguinte as passos a realizar para fazer a sua integração nessa versão: 
 1. Mudar para a pasta *schemas*
 ```
 $ cd core-geonetwork/schemas
 ```
 2. Adicionar o schema plugin como um submódulo do módulo *schemas* 
 ```
-git submodule add -b 3.4.x https://github.com/ricardogsena/iso19139.pt.mig.2.0.git iso19139.pt.mig.2.0
+git submodule add -b 3.4.x https://github.com/wktsi/iso19139.pt.mig.2.0.git iso19139.pt.mig.2.0
 ```
 3. Adicionar o novo submódulo ao ficheiro pom.xml do módulo *schemas* (core-geonetwork/schemas/pom.xml):
 ```
